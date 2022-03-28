@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 RSpec.describe Gitmoji::Regex::Reference do
-  subject(:instance) { Gitmoji::Regex::Reference.instance }
+  subject(:instance) { described_class.instance }
+
   it "Cached reference has all gitmoji" do
     expect(instance.to_a).to eq(["🎨", "⚡️", "🔥", "🐛", "🚑️", "✨", "📝", "🚀", "💄", "🎉", "✅",
                                  "🔒️", "🔐", "🔖", "🚨", "🚧", "💚", "⬇️", "⬆️", "📌", "👷", "📈",
@@ -12,15 +13,20 @@ RSpec.describe Gitmoji::Regex::Reference do
                                  "👔", "🩺", "🧱", "🧑‍💻"])
   end
 
-
   describe "#compare_src" do
     it "Cached source is current" do
       expect(instance.compare_src).to be(true)
     end
 
     it "detects change" do
-      expect(File).to receive(:read).and_return("a", "b")
+      allow(File).to receive(:read).and_return("a", "b")
       expect(instance.compare_src).to be(false)
+    end
+
+    it "reads files" do
+      allow(File).to receive(:read).and_return("a", "b")
+      instance.compare_src
+      expect(File).to have_received(:read).twice
     end
   end
 
@@ -38,22 +44,30 @@ RSpec.describe Gitmoji::Regex::Reference do
     end
 
     it "detects change" do
-      expect(instance).to receive(:pattern).and_return("a", "b")
+      allow(Regexp).to receive(:union).and_return("a", "b")
       expect(instance.compare_json).to be(false)
+    end
+
+    it "calls pattern" do
+      allow(Regexp).to receive(:union).and_return("a", "b")
+      instance.compare_json
+      expect(Regexp).to have_received(:union).twice
     end
   end
 
   describe "#write_json" do
     it "writes" do
-      expect(File).to receive(:write).with(described_class::GITMOJI_PATH, anything)
+      allow(File).to receive(:write).with(described_class::GITMOJI_PATH, anything)
       instance.write_json
+      expect(File).to have_received(:write)
     end
   end
 
   describe "#write_src" do
     it "writes" do
-      expect(File).to receive(:write).with(described_class::LIB_SRC, anything)
+      allow(File).to receive(:write).with(described_class::LIB_SRC, anything)
       instance.write_src
+      expect(File).to have_received(:write)
     end
   end
 end
