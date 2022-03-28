@@ -16,7 +16,12 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+"🔥" =~ Gitmoji::Regex::REGEX
+# => 0 # character at position 0 is a Gitmoji!
+"fire" =~ Gitmoji::Regex::REGEX
+# => nil
+```
 
 ## Development
 
