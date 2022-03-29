@@ -1,8 +1,155 @@
+<p align="center">
+    <a href="https://gitmoji.dev/" target="_blank" rel="noopener">
+      <img width="120px" src="https://github.com/pboling/gitmoji-regex/raw/main/docs/images/logo/gitmoji-logo-120px.png?raw=true" alt="Gotmoji Logo Copyright (c) 2016-2022 Carlos Cuesta, MIT License">
+    </a>
+    <a href="https://rubular.com/" target="_blank" rel="noopener">
+      <img width="120px" src="https://github.com/pboling/gitmoji-regex/raw/main/docs/images/logo/regex-logo-120px.png?raw=true" alt="Regular Expression OOjs UI Icon by GOJU, MIT License via Wikimedia Commons">
+    </a>
+    <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener">
+      <img width="120px" src="https://github.com/pboling/gitmoji-regex/raw/main/docs/images/logo/ruby-logo-198px.svg?raw=true" alt="Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5">
+    </a>
+</p>
+
 # Gitmoji::Regex
 
-This gem provides a regex that allows Ruby code to test a string for a [Gitmoji](https://github.com/carloscuesta/gitmoji) character.  Gitmoji is a [subset](https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json) of the Unicode Emoji character set.  This gem is _not_ a fork of, but was **inspired** by, the wonderful [emoji-regex](https://github.com/ticky/ruby-emoji-regex) gem.
+This gem provides a regex that allows Ruby code to test a string for a [Gitmoji](https://github.com/carloscuesta/gitmoji) character.  Gitmoji is a [subset](https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json) of the Unicode Emoji character set.  This gem is _not_ a fork of, but was **inspired** by, the wonderful [emoji_regex](https://github.com/ticky/ruby-emoji-regex) gem.
 
 This gem has no runtime dependencies.
+
+<!--
+Numbering rows and badges in each row as a visual "database" lookup,
+    as the table is extremely dense, and it can be very difficult to find anything
+Putting one on each row here, to document the emoji that should be used, and for ease of copy/paste.
+
+row #s:
+1️⃣
+2️⃣
+3️⃣
+4️⃣
+5️⃣
+6️⃣
+7️⃣
+
+badge #s:
+⛳️
+🖇
+🏘
+🚎
+🖐
+🧮
+📗
+-->
+
+|     | Project               | bundle add gitmoji-regex                                                                                                                                                                                                                                                                                   |
+|:----|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1️⃣ | name, license, docs   | [![RubyGems.org][⛳️name-img]][⛳️gem] [![License: MIT][🖇src-license-img]][🖇src-license] <!--[![FOSSA][🏘fossa-img]][🏘fossa]--> [![RubyDoc.info][🚎yard-img]][🚎yard] <!--[![InchCI][🖐inch-ci-img]][🚎yard]-->                                                                                |
+| 2️⃣ | version & activity    | [![Gem Version][⛳️version-img]][⛳️gem] [![Total Downloads][🖇DL-total-img]][⛳️gem] [![Download Rank][🏘DL-rank-img]][⛳️gem] [![Source Code][🚎src-home-img]][🚎src-home] [![Open PRs][🖐prs-o-img]][🖐prs-o] [![Closed PRs][🧮prs-c-img]][🧮prs-c] <!--[![Next Version][📗next-img]][📗next]--> |
+| 3️⃣ | maintanence & linting | [![Maintainability][⛳cclim-maint-img]][⛳cclim-maint] [![Helpers][🖇triage-help-img]][🖇triage-help] [![Depfu][🏘depfu-img]][🏘depfu] [![Contributors][🚎contributors-img]][🚎contributors] [![Style][🖐style-wf-img]][🖐style-wf] [![Kloc Roll][🧮kloc-img]][🧮kloc]                            |
+| 4️⃣ | testing               | [![Open Issues][⛳iss-o-img]][⛳iss-o] [![Closed Issues][🖇iss-c-img]][🖇iss-c] [![Supported][🏘sup-wf-img]][🏘sup-wf] [![Heads][🚎heads-wf-img]][🚎heads-wf] [![Unofficial Support][🖐uns-wf-img]][🖐uns-wf] <!--[![MacOS][🧮mac-wf-img]][🧮mac-wf] [![Windows][📗win-wf-img]][📗win-wf]-->      |
+| 5️⃣ | coverage & security   | [![CodeClimate][⛳cclim-cov-img]][⛳cclim-cov] [![CodeCov][🖇codecov-img]][🖇codecov] [![Coveralls][🏘coveralls-img]][🏘coveralls] [![Security Policy][🚎sec-pol-img]][🚎sec-pol] [![CodeQL][🖐codeQL-img]][🖐codeQL] [![Code Coverage][🧮cov-wf-img]][🧮cov-wf]                                  |
+| 6️⃣ | resources             | [![Discussion][⛳gh-discussions-img]][⛳gh-discussions] [![Get help on Codementor][🖇codementor-img]][🖇codementor] [![Chat][🏘chat-img]][🏘chat] [![Blog][🚎blog-img]][🚎blog] [![Blog][🖐wiki-img]][🖐wiki]                                                                                     |
+| 7️⃣ | spread 💖             | [![Liberapay Patrons][⛳liberapay-img]][⛳liberapay] [![Sponsor Me][🖇sponsor-img]][🖇sponsor] [![Tweet @ Peter][🏘tweet-img]][🏘tweet] [🌏][aboutme] [👼][angelme] [💻][coderme] [🌹][politicme]                                                                                                 |
+
+<!--
+The link tokens in the following sections should be kept ordered by the row and badge numbering scheme
+-->
+
+<!-- 1️⃣ name, license, docs -->
+[⛳️gem]: https://rubygems.org/gems/gitmoji-regex
+[⛳️name-img]: https://img.shields.io/badge/name-gitmoji--regex-brightgreen.svg?style=flat
+[🖇src-license]: https://opensource.org/licenses/MIT
+[🖇src-license-img]: https://img.shields.io/badge/License-MIT-green.svg
+[🏘fossa]: https://app.fossa.io/projects/git%2Bgithub.com%2Fpboling%2Fgitmoji-regex?ref=badge_shield
+[🏘fossa-img]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpboling%2Fgitmoji-regex.svg?type=shield
+[🚎yard]: https://www.rubydoc.info/github/pboling/gitmoji-regex
+[🚎yard-img]: https://img.shields.io/badge/documentation-rubydoc-brightgreen.svg?style=flat
+[🖐inch-ci-img]: http://inch-ci.org/github/pboling/gitmoji-regex.png
+
+<!-- 2️⃣ version & activity -->
+[⛳️version-img]: http://img.shields.io/gem/v/gitmoji-regex.svg
+[🖇DL-total-img]: https://img.shields.io/gem/dt/gitmoji-regex.svg
+[🏘DL-rank-img]: https://img.shields.io/gem/rt/gitmoji-regex.svg
+[🚎src-home]: https://github.com/pboling/gitmoji-regex
+[🚎src-home-img]: https://img.shields.io/badge/source-github-brightgreen.svg?style=flat
+[🖐prs-o]: https://github.com/pboling/gitmoji-regex/pulls
+[🖐prs-o-img]: https://img.shields.io/github/issues-pr/pboling/gitmoji-regex
+[🧮prs-c]: https://github.com/pboling/gitmoji-regex/pulls?q=is%3Apr+is%3Aclosed
+[🧮prs-c-img]: https://img.shields.io/github/issues-pr-closed/pboling/gitmoji-regex
+[📗next]: https://github.com/pboling/gitmoji-regex/milestone/1
+[📗next-img]: https://img.shields.io/github/milestones/progress/pboling/gitmoji-regex/1?label=Next%20Version
+
+<!-- 3️⃣ maintanence & linting -->
+[⛳cclim-maint]: https://codeclimate.com/github/pboling/gitmoji-regex/maintainability
+[⛳cclim-maint-img]: https://api.codeclimate.com/v1/badges/688c612528ff90a46955/maintainability
+[🖇triage-help]: https://www.codetriage.com/pboling/gitmoji-regex
+[🖇triage-help-img]: https://www.codetriage.com/pboling/gitmoji-regex/badges/users.svg
+[🏘depfu]: https://depfu.com/github/pboling/gitmoji-regex?project_id=4445
+[🏘depfu-img]: https://badges.depfu.com/badges/6d34dc1ba682bbdf9ae2a97848241743/count.svg
+[🚎contributors]: https://github.com/pboling/gitmoji-regex/graphs/contributors
+[🚎contributors-img]: https://img.shields.io/github/contributors-anon/pboling/gitmoji-regex
+[🖐style-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/style.yml
+[🖐style-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/style.yml/badge.svg
+[🧮kloc]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[🧮kloc-img]: https://img.shields.io/tokei/lines/github.com/pboling/gitmoji-regex
+
+<!-- 4️⃣ testing -->
+[⛳iss-o]: https://github.com/pboling/gitmoji-regex/issues
+[⛳iss-o-img]: https://img.shields.io/github/issues-raw/pboling/gitmoji-regex
+[🖇iss-c]: https://github.com/pboling/gitmoji-regex/issues?q=is%3Aissue+is%3Aclosed
+[🖇iss-c-img]: https://img.shields.io/github/issues-closed-raw/pboling/gitmoji-regex
+[🏘sup-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/supported.yml
+[🏘sup-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/supported.yml/badge.svg
+[🚎heads-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/heads.yml
+[🚎heads-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/heads.yml/badge.svg
+[🖐uns-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/unsupported.yml
+[🖐uns-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/unsupported.yml/badge.svg
+[🧮mac-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/macos.yml
+[🧮mac-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/macos.yml/badge.svg
+[📗win-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/windows.yml
+[📗win-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/windows.yml/badge.svg
+
+<!-- 5️⃣ coverage & security -->
+[⛳cclim-cov]: https://codeclimate.com/github/pboling/gitmoji-regex/test_coverage
+[⛳cclim-cov-img]: https://api.codeclimate.com/v1/badges/688c612528ff90a46955/test_coverage
+[🖇codecov-img]: https://codecov.io/gh/pboling/gitmoji-regex/branch/main/graph/badge.svg?token=bNqSzNiuo2
+[🖇codecov]: https://codecov.io/gh/pboling/gitmoji-regex
+[🏘coveralls]: https://coveralls.io/github/pboling/gitmoji-regex?branch=main
+[🏘coveralls-img]: https://coveralls.io/repos/github/pboling/gitmoji-regex/badge.svg?branch=main
+[🚎sec-pol]: https://github.com/pboling/gitmoji-regex/blob/main/SECURITY.md
+[🚎sec-pol-img]: https://img.shields.io/badge/security-policy-brightgreen.svg?style=flat
+[🖐codeQL]: https://github.com/pboling/gitmoji-regex/security/code-scanning
+[🖐codeQL-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/codeql-analysis.yml/badge.svg
+[🧮cov-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/coverage.yml
+[🧮cov-wf-img]: https://github.com/pboling/gitmoji-regex/actions/workflows/coverage.yml/badge.svg
+
+<!-- 6️⃣ resources -->
+[⛳gh-discussions]: https://github.com/pboling/gitmoji-regex/discussions
+[⛳gh-discussions-img]: https://img.shields.io/github/discussions/pboling/gitmoji-regex
+[🖇codementor]: https://www.codementor.io/peterboling?utm_source=github&utm_medium=button&utm_term=peterboling&utm_campaign=github
+[🖇codementor-img]: https://cdn.codementor.io/badges/get_help_github.svg
+[🏘chat]: https://gitter.im/pboling/gitmoji-regex
+[🏘chat-img]: https://img.shields.io/gitter/room/pboling/gitmoji-regex.svg
+[🚎blog]: http://www.railsbling.com/tags/gitmoji-regex/
+[🚎blog-img]: https://img.shields.io/badge/blog-railsbling-brightgreen.svg?style=flat
+[🖐wiki]: https://github.com/pboling/gitmoji-regex/wiki
+[🖐wiki-img]: https://img.shields.io/badge/wiki-examples-brightgreen.svg?style=flat
+
+<!-- 7️⃣ spread 💖 -->
+[⛳liberapay-img]: https://img.shields.io/liberapay/patrons/pboling.svg?logo=liberapay
+[⛳liberapay]: https://liberapay.com/pboling/donate
+[🖇sponsor-img]: https://img.shields.io/badge/sponsor-pboling.svg?style=social&logo=github
+[🖇sponsor]: https://github.com/sponsors/pboling
+[🏘tweet-img]: https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow
+[🏘tweet]: http://twitter.com/galtzo
+
+<!-- Maintainer Contact Links -->
+[railsbling]: http://www.railsbling.com
+[peterboling]: http://www.peterboling.com
+[aboutme]: https://about.me/peter.boling
+[angelme]: https://angel.co/peter-boling
+[coderme]:http://coderwall.com/pboling
+[politicme]: https://nationalprogressiveparty.org
+
 
 ## Installation
 
