@@ -21,7 +21,7 @@ if RUN_COVERAGE
     track_files "**/*.rb"
 
     if ALL_FORMATTERS
-      command_name "#{ENV['GITHUB_WORKFLOW']} Job #{ENV['GITHUB_RUN_ID']}:#{ENV['GITHUB_RUN_NUMBER']}"
+      command_name "#{ENV["GITHUB_WORKFLOW"]} Job #{ENV["GITHUB_RUN_ID"]}:#{ENV["GITHUB_RUN_NUMBER"]}"
     else
       formatter SimpleCov::Formatter::HTMLFormatter
     end

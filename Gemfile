@@ -17,6 +17,8 @@ coverage = minimum_version.call("2.6")
 linting = minimum_version.call("2.7")
 debugging = minimum_version.call("2.7")
 
+gem "overcommit", "~> 0.58" if linting
+
 gem "pry", platforms: %i[mri jruby]
 
 platforms :mri do
@@ -33,11 +35,11 @@ platforms :mri do
     gem "rubocop-thread_safety", "~> 0.4", require: false
   end
   if coverage
-    gem 'codecov', '~> 0.6' # For CodeCov
-    gem 'simplecov', '~> 0.21', require: false
-    gem 'simplecov-cobertura' # XML for Jenkins
-    gem 'simplecov-json' # For CodeClimate
-    gem 'simplecov-lcov', '~> 0.8', require: false
+    gem "codecov", "~> 0.6" # For CodeCov
+    gem "simplecov", "~> 0.21", require: false
+    gem "simplecov-cobertura" # XML for Jenkins
+    gem "simplecov-json" # For CodeClimate
+    gem "simplecov-lcov", "~> 0.8", require: false
   end
   if debugging
     # Add `byebug` to your code where you want to drop to REPL
