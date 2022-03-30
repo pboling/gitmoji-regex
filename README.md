@@ -216,6 +216,10 @@ For example:
 spec.add_dependency "gitmoji-regex", "~> 0.1"
 ```
 
+## Security
+
+See [SECURITY.md](https://github.com/pboling/gitmoji-regex/blob/main/SECURITY.md).
+
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 
 [gh_discussions]: https://github.com/pboling/gitmoji-regex/discussions
