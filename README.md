@@ -80,7 +80,7 @@ The link tokens in the following sections should be kept ordered by the row and 
 
 <!-- 3️⃣ maintanence & linting -->
 [⛳cclim-maint]: https://codeclimate.com/github/pboling/gitmoji-regex/maintainability
-[⛳cclim-maint-img]: https://api.codeclimate.com/v1/badges/688c612528ff90a46955/maintainability
+[⛳cclim-maint-img]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/maintainability
 [🖇triage-help]: https://www.codetriage.com/pboling/gitmoji-regex
 [🖇triage-help-img]: https://www.codetriage.com/pboling/gitmoji-regex/badges/users.svg
 [🏘depfu]: https://depfu.com/github/pboling/gitmoji-regex?project_id=4445
@@ -110,7 +110,7 @@ The link tokens in the following sections should be kept ordered by the row and 
 
 <!-- 5️⃣ coverage & security -->
 [⛳cclim-cov]: https://codeclimate.com/github/pboling/gitmoji-regex/test_coverage
-[⛳cclim-cov-img]: https://api.codeclimate.com/v1/badges/688c612528ff90a46955/test_coverage
+[⛳cclim-cov-img]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/test_coverage
 [🖇codecov-img]: https://codecov.io/gh/pboling/gitmoji-regex/branch/main/graph/badge.svg?token=bNqSzNiuo2
 [🖇codecov]: https://codecov.io/gh/pboling/gitmoji-regex
 [🏘coveralls]: https://coveralls.io/github/pboling/gitmoji-regex?branch=main
