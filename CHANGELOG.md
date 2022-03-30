@@ -13,6 +13,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [0.1.3] - 2022-03-30
+### Added
+- Documentation
+- Badges
+
+### Fixed
+- Code Coverage
+- Changelog URLs
+
 ## [0.1.2] - 2022-03-29
 ### Added
 - Badges and Logos
@@ -25,7 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/oauth-xx/oauth2/compare/.v0.1.2...HEAD
-[0.1.2]: https://github.com/pboling//compare/v0.1.1...v0.1.2
-[0.1.1]: https://github.com/pboling//compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/oauth-xx/oauth2/compare/e71c6c3dad5bfd59ae2509531eaea3a16e21cb63...v0.1.0
+[Unreleased]: https://github.com/pboling/gitmoji-regex/compare/.v0.1.3...HEAD
+[0.1.3]: https://github.com/pboling/gitmoji-regex/compare/v0.1.2...v0.1.3
+[0.1.2]: https://github.com/pboling/gitmoji-regex/compare/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/pboling/gitmoji-regex/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/pboling/gitmoji-regex/compare/e71c6c3dad5bfd59ae2509531eaea3a16e21cb63...v0.1.0
