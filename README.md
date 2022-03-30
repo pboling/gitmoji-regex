@@ -38,16 +38,19 @@ badge #s:
 🖐
 🧮
 📗
+
+appended indicators:
+♻️ - URL needs to be updated from SASS integration. Find / Replace is insufficient.
 -->
 
-|     | Project               | bundle add gitmoji-regex                                                                                                                                                                                                                                                                                   |
+|     | Project               | bundle add gitmoji-regex                                                                                                                                                                                                                                                                        |
 |:----|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1️⃣ | name, license, docs   | [![RubyGems.org][⛳️name-img]][⛳️gem] [![License: MIT][🖇src-license-img]][🖇src-license] <!--[![FOSSA][🏘fossa-img]][🏘fossa]--> [![RubyDoc.info][🚎yard-img]][🚎yard] <!--[![InchCI][🖐inch-ci-img]][🚎yard]-->                                                                                |
 | 2️⃣ | version & activity    | [![Gem Version][⛳️version-img]][⛳️gem] [![Total Downloads][🖇DL-total-img]][⛳️gem] [![Download Rank][🏘DL-rank-img]][⛳️gem] [![Source Code][🚎src-home-img]][🚎src-home] [![Open PRs][🖐prs-o-img]][🖐prs-o] [![Closed PRs][🧮prs-c-img]][🧮prs-c] <!--[![Next Version][📗next-img]][📗next]--> |
-| 3️⃣ | maintanence & linting | [![Maintainability][⛳cclim-maint-img]][⛳cclim-maint] [![Helpers][🖇triage-help-img]][🖇triage-help] [![Depfu][🏘depfu-img]][🏘depfu] [![Contributors][🚎contributors-img]][🚎contributors] [![Style][🖐style-wf-img]][🖐style-wf] [![Kloc Roll][🧮kloc-img]][🧮kloc]                            |
+| 3️⃣ | maintanence & linting | [![Maintainability][⛳cclim-maint-img♻️]][⛳cclim-maint] [![Helpers][🖇triage-help-img]][🖇triage-help] [![Depfu][🏘depfu-img♻️]][🏘depfu♻️] [![Contributors][🚎contributors-img]][🚎contributors] [![Style][🖐style-wf-img]][🖐style-wf] [![Kloc Roll][🧮kloc-img]][🧮kloc]                      |
 | 4️⃣ | testing               | [![Open Issues][⛳iss-o-img]][⛳iss-o] [![Closed Issues][🖇iss-c-img]][🖇iss-c] [![Supported][🏘sup-wf-img]][🏘sup-wf] [![Heads][🚎heads-wf-img]][🚎heads-wf] [![Unofficial Support][🖐uns-wf-img]][🖐uns-wf] <!--[![MacOS][🧮mac-wf-img]][🧮mac-wf] [![Windows][📗win-wf-img]][📗win-wf]-->      |
-| 5️⃣ | coverage & security   | [![CodeClimate][⛳cclim-cov-img]][⛳cclim-cov] [![CodeCov][🖇codecov-img]][🖇codecov] [![Coveralls][🏘coveralls-img]][🏘coveralls] [![Security Policy][🚎sec-pol-img]][🚎sec-pol] [![CodeQL][🖐codeQL-img]][🖐codeQL] [![Code Coverage][🧮cov-wf-img]][🧮cov-wf]                                  |
-| 6️⃣ | resources             | [![Discussion][⛳gh-discussions-img]][⛳gh-discussions] [![Get help on Codementor][🖇codementor-img]][🖇codementor] [![Chat][🏘chat-img]][🏘chat] [![Blog][🚎blog-img]][🚎blog] [![Blog][🖐wiki-img]][🖐wiki]                                                                                     |
+| 5️⃣ | coverage & security   | [![CodeClimate][⛳cclim-cov-img♻️]][⛳cclim-cov] [![CodeCov][🖇codecov-img♻️]][🖇codecov] [![Coveralls][🏘coveralls-img]][🏘coveralls] [![Security Policy][🚎sec-pol-img]][🚎sec-pol] [![CodeQL][🖐codeQL-img]][🖐codeQL] [![Code Coverage][🧮cov-wf-img]][🧮cov-wf]                              |
+| 6️⃣ | resources             | [![Discussion][⛳gh-discussions-img]][⛳gh-discussions] [![Get help on Codementor][🖇codementor-img]][🖇codementor] [![Chat][🏘chat-img]][🏘chat] [![Blog][🚎blog-img]][🚎blog] [![Wiki][🖐wiki-img]][🖐wiki]                                                                                     |
 | 7️⃣ | spread 💖             | [![Liberapay Patrons][⛳liberapay-img]][⛳liberapay] [![Sponsor Me][🖇sponsor-img]][🖇sponsor] [![Tweet @ Peter][🏘tweet-img]][🏘tweet] [🌏][aboutme] [👼][angelme] [💻][coderme] [🌹][politicme]                                                                                                 |
 
 <!--
@@ -64,6 +67,9 @@ The link tokens in the following sections should be kept ordered by the row and 
 [🚎yard]: https://www.rubydoc.info/github/pboling/gitmoji-regex
 [🚎yard-img]: https://img.shields.io/badge/documentation-rubydoc-brightgreen.svg?style=flat
 [🖐inch-ci-img]: http://inch-ci.org/github/pboling/gitmoji-regex.png
+    <a href="https://gitmoji.dev">
+      <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+    </a>
 
 <!-- 2️⃣ version & activity -->
 [⛳️version-img]: http://img.shields.io/gem/v/gitmoji-regex.svg
@@ -80,11 +86,11 @@ The link tokens in the following sections should be kept ordered by the row and 
 
 <!-- 3️⃣ maintanence & linting -->
 [⛳cclim-maint]: https://codeclimate.com/github/pboling/gitmoji-regex/maintainability
-[⛳cclim-maint-img]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/maintainability
+[⛳cclim-maint-img♻️]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/maintainability
 [🖇triage-help]: https://www.codetriage.com/pboling/gitmoji-regex
 [🖇triage-help-img]: https://www.codetriage.com/pboling/gitmoji-regex/badges/users.svg
-[🏘depfu]: https://depfu.com/github/pboling/gitmoji-regex?project_id=4445
-[🏘depfu-img]: https://badges.depfu.com/badges/6d34dc1ba682bbdf9ae2a97848241743/count.svg
+[🏘depfu♻️]: https://depfu.com/github/pboling/gitmoji-regex?project_id=34924
+[🏘depfu-img♻️]: https://badges.depfu.com/badges/300630ab4b7c2efea20806d13d1ef41f/count.svg
 [🚎contributors]: https://github.com/pboling/gitmoji-regex/graphs/contributors
 [🚎contributors-img]: https://img.shields.io/github/contributors-anon/pboling/gitmoji-regex
 [🖐style-wf]: https://github.com/pboling/gitmoji-regex/actions/workflows/style.yml
@@ -110,8 +116,8 @@ The link tokens in the following sections should be kept ordered by the row and 
 
 <!-- 5️⃣ coverage & security -->
 [⛳cclim-cov]: https://codeclimate.com/github/pboling/gitmoji-regex/test_coverage
-[⛳cclim-cov-img]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/test_coverage
-[🖇codecov-img]: https://codecov.io/gh/pboling/gitmoji-regex/branch/main/graph/badge.svg?token=bNqSzNiuo2
+[⛳cclim-cov-img♻️]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/test_coverage
+[🖇codecov-img♻️]: https://codecov.io/gh/pboling/gitmoji-regex/branch/main/graph/badge.svg?token=EJCOr0hsPq
 [🖇codecov]: https://codecov.io/gh/pboling/gitmoji-regex
 [🏘coveralls]: https://coveralls.io/github/pboling/gitmoji-regex?branch=main
 [🏘coveralls-img]: https://coveralls.io/repos/github/pboling/gitmoji-regex/badge.svg?branch=main
