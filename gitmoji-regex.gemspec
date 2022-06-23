@@ -36,5 +36,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rspec-benchmark", "~> 0.6"
   spec.add_development_dependency "rspec-block_is_expected", "~> 1.0"
+  # Linting - rubocop-lts v8 is a rubocop wrapper for Ruby >= 2.2,
+  #   and should only be bumped when dropping old Ruby support
+  # see: https://dev.to/pboling/rubocop-lts-1e31
+  spec.add_development_dependency "rubocop-lts", ["~> 12.0", ">= 12.0.1"]
   spec.add_development_dependency "yard", ">= 0.9.20"
 end
