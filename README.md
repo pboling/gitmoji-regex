@@ -14,8 +14,6 @@
 
 This gem provides a regex that allows Ruby code to test a string for a [Gitmoji](https://github.com/carloscuesta/gitmoji) character.  Gitmoji is a [subset](https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json) of the Unicode Emoji character set.  This gem is _not_ a fork of, but was **inspired** by, the wonderful [emoji_regex](https://github.com/ticky/ruby-emoji-regex) gem.
 
-This gem has no runtime dependencies.
-
 <!--
 Numbering rows and badges in each row as a visual "database" lookup,
     as the table is extremely dense, and it can be very difficult to find anything
@@ -180,6 +178,11 @@ If bundler is not being used to manage dependencies, install the gem by executin
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+To update the cached `src/gitmojis.json` load the console with `bin/console`, and run:
+```ruby
+Gitmoji::Regex::Reference.instance.write_json
+```
 
 ## Contributing
 

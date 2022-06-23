@@ -2,7 +2,7 @@
 
 RSpec.describe Gitmoji::Regex do
   it "has a version number" do
-    expect(Gitmoji::Regex::VERSION).not_to be_nil
+    expect(Gitmoji::Regex::Version::VERSION).not_to be_nil
   end
 
   GITMOJI_REF.to_a.each do |gitmoji|

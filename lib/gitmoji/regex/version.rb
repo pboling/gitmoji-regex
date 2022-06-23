@@ -2,6 +2,8 @@
 
 module Gitmoji
   module Regex
-    VERSION = "0.1.3"
+    module Version
+      VERSION = "0.1.4"
+    end
   end
 end
