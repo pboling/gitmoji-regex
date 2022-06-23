@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [0.1.4] - 2022-06-24
+### Added
+- Adds new gitmoji "💸"
+
 ## [0.1.3] - 2022-03-30
 ### Added
 - Documentation
