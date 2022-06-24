@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.0.1] - 2022-06-24
+### Fixed
+- Template `src/regex.rb`
+- CI Build
+
 ## [1.0.0] - 2022-06-24
 ### Added
 - New gitmoji "💸"
