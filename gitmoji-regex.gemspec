@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.executables = []
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "version_gem", "~> 1.0"
+  spec.add_dependency "version_gem", "~> 1.1"
 
   spec.add_development_dependency "http", ">= 4.4.1", "< 6"
   spec.add_development_dependency "json", ">= 2.0.2", "~> 2.0"

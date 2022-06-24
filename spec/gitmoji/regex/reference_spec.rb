@@ -15,7 +15,6 @@ RSpec.describe Gitmoji::Regex::Reference do
 
   describe "#compare_src" do
     it "Cached source is current" do
-
       expect(instance.compare_src).to be(true)
     end
 

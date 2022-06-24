@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "version_gem/rspec"
+
 DEBUG = ENV["DEBUG"] == "true"
 
 ruby_version = Gem::Version.new(RUBY_VERSION)
