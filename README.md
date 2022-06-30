@@ -38,7 +38,7 @@ badge #s:
 📗
 
 appended indicators:
-♻️ - URL needs to be updated from SASS integration. Find / Replace is insufficient.
+♻️ - URL needs to be updated from SAAS integration. Find / Replace is insufficient.
 -->
 
 |     | Project                        | bundle add gitmoji-regex                                                                                                                                                                                                                                                                                                  |
@@ -83,7 +83,7 @@ The link tokens in the following sections should be kept ordered by the row and 
 [📗next]: https://github.com/pboling/gitmoji-regex/milestone/1
 [📗next-img]: https://img.shields.io/github/milestones/progress/pboling/gitmoji-regex/1?label=Next%20Version
 
-<!-- 3️⃣ maintanence & linting -->
+<!-- 3️⃣ maintenance & linting -->
 [⛳cclim-maint]: https://codeclimate.com/github/pboling/gitmoji-regex/maintainability
 [⛳cclim-maint-img♻️]: https://api.codeclimate.com/v1/badges/f32e1d1148e8bad58197/maintainability
 [🖇triage-help]: https://www.codetriage.com/pboling/gitmoji-regex
