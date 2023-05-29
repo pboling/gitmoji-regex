@@ -17,14 +17,32 @@ To submit a patch, please fork the project and create a patch with tests. Once y
 7. Run `open coverage/index.html`. If your changes are not completely covered
    by your tests, return to step 3.
 8. Add documentation for your feature or bug fix.
-9. Run `bundle exec rake verify_measurements`. If your changes are not 100%
-   documented, go back to step 8.
-10. Commit and push your changes.
-11. [Submit a pull request.][pr]
+9. Commit and push your changes.
+10. [Submit a pull request.][pr]
 
 [fork]: http://help.github.com/fork-a-repo/
 [branch]: http://learn.github.com/p/branching.html
 [pr]: http://help.github.com/send-pull-requests/
+
+## Release
+
+To release a new version:
+
+1. run `bin/refresh`, or `rake regenerate`, to update the regex to current gitmoji set
+   - Test `gitmoji/regex/reference_spec.rb` may fail showing new gitmojis
+   - These will need to be added to the test, and noted in the CHANGELOG
+2. update the version number in `version.rb`
+3. run `bin/setup && bin/rake` to update `Gemfile.lock`
+4. run `bundle exec rake build:checksum`
+5. move the built gem to project root
+6. run `bin/checksum` to create the missing SHA256 checksum
+7. move the built gem back to `pkg/`
+8. commit the changes
+9. run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org][rubygems].
+
+NOTE: You will need to have a public key in `certs/`, and list your cert in the
+`gemspec`, in order to sign the new release.
+See: [RubyGems Security Guide][rubygems-security-guide]
 
 ## Contributors
 

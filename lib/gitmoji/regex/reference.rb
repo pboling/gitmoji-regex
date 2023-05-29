@@ -10,7 +10,7 @@ module Gitmoji
   module Regex
     # Reference provides utility tools for maintaining and testing this gem
     class Reference
-      GITMOJI_REFERENCE = "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json"
+      GITMOJI_REFERENCE = "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/packages/gitmojis/src/gitmojis.json"
       GITMOJI_PATH = "src/gitmojis.json"
       LIB_SRC = "lib/gitmoji/regex.rb"
       TEMPLATE_SRC = "src/regex.rb"

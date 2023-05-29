@@ -6,12 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-
 ### Changed
-
 ### Fixed
-
 ### Removed
+
+## [1.0.2] - 2023-05-29
+### Added
+- New gitmoji "🧵"
+- New gitmoji "🦺"
 
 ## [1.0.1] - 2022-06-24
 ### Added
@@ -48,7 +50,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/pboling/gitmoji-regex/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/pboling/gitmoji-regex/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/pboling/gitmoji-regex/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/pboling/gitmoji-regex/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/pboling/gitmoji-regex/compare/v0.1.3...v1.0.0
 [0.1.3]: https://github.com/pboling/gitmoji-regex/compare/v0.1.2...v0.1.3
