@@ -43,7 +43,6 @@ jobs:
         include:
           # Includes a new variable experimental with a value of false
           #   for the matrix legs matching gemfile: vanilla, which is all of them.
-          # This is here for parity with the unsupported.yml
           # This is a hack. Combined with continue-on-error it should allow us
           #   to have a workflow with allowed failure.
           # This is the "supported" build matrix, so only the "head" builds are experimental here.
