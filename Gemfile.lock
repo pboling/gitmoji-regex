@@ -173,20 +173,14 @@ DEPENDENCIES
   rspec (~> 3.8)
   rspec-benchmark (~> 0.6)
   rspec-block_is_expected (~> 1.0)
-  rubocop-gradual (~> 0.3)
   rubocop-lts (~> 12.1)
-  rubocop-md (~> 1.2)
   rubocop-packaging (~> 0.5)
-  rubocop-rake (~> 0.6)
   rubocop-rspec (~> 2.22)
-  rubocop-shopify (~> 2.13)
-  rubocop-thread_safety (~> 0.5)
   simplecov (~> 0.22)
   simplecov-cobertura
   simplecov-json (~> 0.2)
   simplecov-lcov (~> 0.8)
   simplecov-rcov!
-  standard-rubocop-lts (>= 1.0.3, < 3)
   yard (~> 0.9, >= 0.9.34)
 
 BUNDLED WITH
