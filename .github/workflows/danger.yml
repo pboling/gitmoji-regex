@@ -15,6 +15,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        rubygems:
+          - latest
+        bundler:
+          - latest
         ruby:
           - "2.7"
     steps:
