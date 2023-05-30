@@ -41,15 +41,15 @@ appended indicators:
 ♻️ - URL needs to be updated from SAAS integration. Find / Replace is insufficient.
 -->
 
-|     | Project                        | bundle add gitmoji-regex                                                                                                                                                                                                                                                                                                  |
-|:----|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     | Project                        | bundle add gitmoji-regex                                                                                                                                                                                                                                                                                                 |
+|:----|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1️⃣ | name, license, docs, standards | [![RubyGems.org][⛳️name-img]][⛳️gem] [![License: MIT][🖇src-license-img]][🖇src-license] <!--[![FOSSA][🏘fossa-img]][🏘fossa]--> [![RubyDoc.info][🚎yard-img]][🚎yard] [![GitMoji][🖐gitmoji-img]][🖐gitmoji] [![SemVer 2.0.0][🧮semver-img]][semver] [![Keep-A-Changelog 1.0.0][📗keep-changelog-img]][📗keep-changelog] |
-| 2️⃣ | version & activity             | [![Gem Version][⛳️version-img]][⛳️gem] [![Total Downloads][🖇DL-total-img]][⛳️gem] [![Download Rank][🏘DL-rank-img]][⛳️gem] [![Source Code][🚎src-home-img]][🚎src-home] [![Open PRs][🖐prs-o-img]][🖐prs-o] [![Closed PRs][🧮prs-c-img]][🧮prs-c] <!--[![Next Version][📗next-img]][📗next]-->                           |
-| 3️⃣ | maintanence & linting          | [![Maintainability][⛳cclim-maint-img♻️]][⛳cclim-maint] [![Helpers][🖇triage-help-img]][🖇triage-help] [![Depfu][🏘depfu-img♻️]][🏘depfu♻️] [![Contributors][🚎contributors-img]][🚎contributors] [![Style][🖐style-wf-img]][🖐style-wf] [![Kloc Roll][🧮kloc-img]][🧮kloc]                                                |
-| 4️⃣ | testing                        | [![Open Issues][⛳iss-o-img]][⛳iss-o] [![Closed Issues][🖇iss-c-img]][🖇iss-c] [![Supported][🏘sup-wf-img]][🏘sup-wf] [![Heads][🚎heads-wf-img]][🚎heads-wf] [![Unofficial Support][🖐uns-wf-img]][🖐uns-wf] <!--[![MacOS][🧮mac-wf-img]][🧮mac-wf] [![Windows][📗win-wf-img]][📗win-wf]-->                                |
-| 5️⃣ | coverage & security            | [![CodeClimate][⛳cclim-cov-img♻️]][⛳cclim-cov] [![CodeCov][🖇codecov-img♻️]][🖇codecov] [![Coveralls][🏘coveralls-img]][🏘coveralls] [![Security Policy][🚎sec-pol-img]][🚎sec-pol] [![CodeQL][🖐codeQL-img]][🖐codeQL] [![Code Coverage][🧮cov-wf-img]][🧮cov-wf]                                                        |
-| 6️⃣ | resources                      | [![Discussion][⛳gh-discussions-img]][⛳gh-discussions] [![Get help on Codementor][🖇codementor-img]][🖇codementor] [![Chat][🏘chat-img]][🏘chat] [![Blog][🚎blog-img]][🚎blog] [![Wiki][🖐wiki-img]][🖐wiki]                                                                                                               |
-| 7️⃣ | spread 💖                      | [![Liberapay Patrons][⛳liberapay-img]][⛳liberapay] [![Sponsor Me][🖇sponsor-img]][🖇sponsor] [![Tweet @ Peter][🏘tweet-img]][🏘tweet] [🌏][aboutme] [👼][angelme] [💻][coderme]                                                                                                                                           |
+| 2️⃣ | version & activity             | [![Gem Version][⛳️version-img]][⛳️gem] [![Total Downloads][🖇DL-total-img]][⛳️gem] [![Download Rank][🏘DL-rank-img]][⛳️gem] [![Source Code][🚎src-home-img]][🚎src-home] [![Open PRs][🖐prs-o-img]][🖐prs-o] [![Closed PRs][🧮prs-c-img]][🧮prs-c] <!--[![Next Version][📗next-img]][📗next]-->                          |
+| 3️⃣ | maintanence & linting          | [![Maintainability][⛳cclim-maint-img♻️]][⛳cclim-maint] [![Helpers][🖇triage-help-img]][🖇triage-help] [![Depfu][🏘depfu-img♻️]][🏘depfu♻️] [![Contributors][🚎contributors-img]][🚎contributors] [![Style][🖐style-wf-img]][🖐style-wf] [![Kloc Roll][🧮kloc-img]][🧮kloc]                                               |
+| 4️⃣ | testing                        | [![Open Issues][⛳iss-o-img]][⛳iss-o] [![Closed Issues][🖇iss-c-img]][🖇iss-c] [![Supported][🏘sup-wf-img]][🏘sup-wf] [![Heads][🚎heads-wf-img]][🚎heads-wf] [![Unofficial Support][🖐uns-wf-img]][🖐uns-wf] <!--[![MacOS][🧮mac-wf-img]][🧮mac-wf] [![Windows][📗win-wf-img]][📗win-wf]-->                               |
+| 5️⃣ | coverage & security            | [![CodeClimate][⛳cclim-cov-img♻️]][⛳cclim-cov] [![CodeCov][🖇codecov-img♻️]][🖇codecov] [![Coveralls][🏘coveralls-img]][🏘coveralls] [![Security Policy][🚎sec-pol-img]][🚎sec-pol] [![CodeQL][🖐codeQL-img]][🖐codeQL] [![Code Coverage][🧮cov-wf-img]][🧮cov-wf]                                                       |
+| 6️⃣ | resources                      | [![Discussion][⛳gh-discussions-img]][⛳gh-discussions] [![Get help on Codementor][🖇codementor-img]][🖇codementor] [![Chat][🏘chat-img]][🏘chat] [![Blog][🚎blog-img]][🚎blog] [![Wiki][🖐wiki-img]][🖐wiki]                                                                                                              |
+| 7️⃣ | spread 💖                      | [![Liberapay Patrons][⛳liberapay-img]][⛳liberapay] [![Sponsor Me][🖇sponsor-img]][🖇sponsor] [![Tweet @ Peter][🏘tweet-img]][🏘tweet] [🌏][aboutme] [👼][angelme]                                                                                                                                           |
 
 <!--
 The link tokens in the following sections should be kept ordered by the row and badge numbering scheme
@@ -147,13 +147,6 @@ The link tokens in the following sections should be kept ordered by the row and 
 [🏘tweet-img]: https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow
 [🏘tweet]: http://twitter.com/galtzo
 
-<!-- Maintainer Contact Links -->
-[railsbling]: http://www.railsbling.com
-[peterboling]: http://www.peterboling.com
-[aboutme]: https://about.me/peter.boling
-[angelme]: https://angel.co/peter-boling
-[coderme]:http://coderwall.com/pboling
-
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
@@ -206,7 +199,7 @@ NOTE: the [gitmoji project](https://github.com/carloscuesta/gitmoji) is also [MI
 
 ## Code of Conduct
 
-Everyone interacting in the Gitmoji::Regex project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/pboling/gitmoji-regex/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Gitmoji::Regex project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct][conduct].
 
 ## Versioning
 
@@ -226,66 +219,35 @@ spec.add_dependency "gitmoji-regex", "~> 1.0"
 
 ## Security
 
-See [SECURITY.md](https://github.com/pboling/gitmoji-regex/blob/main/SECURITY.md).
-
-[copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
-
-[gh_discussions]: https://github.com/pboling/gitmoji-regex/discussions
-
-[conduct]: https://github.com/pboling/gitmoji-regex/blob/main/CODE_OF_CONDUCT.md
-
-[contributing]: https://github.com/pboling/gitmoji-regex/blob/main/CONTRIBUTING.md
-
-[security]: https://github.com/pboling/gitmoji-regex/blob/main/SECURITY.md
-
-[license]: https://github.com/pboling/gitmoji-regex/blob/main/LICENSE.txt
-
-[license-ref]: https://opensource.org/licenses/MIT
-
-[semver]: http://semver.org/
-
-[pvc]: http://guides.rubygems.org/patterns/#pessimistic-version-constraint
-
-[railsbling]: http://www.railsbling.com
-
-[peterboling]: http://www.peterboling.com
+See [SECURITY.md][security].
 
 [aboutme]: https://about.me/peter.boling
-
-[angelme]: https://angel.co/peter-boling
-
-[coderme]:http://coderwall.com/pboling
-
-[followme-img]: https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow
-
-[tweetme]: http://twitter.com/galtzo
-
-[politicme]: https://nationalprogressiveparty.org
-
-[documentation]: https://rubydoc.info/github/pboling/gitmoji-regex/main
-
-[source]: https://github.com/pboling/gitmoji-regex/
-
 [actions]: https://github.com/pboling/gitmoji-regex/actions
-
-[issues]: https://github.com/pboling/gitmoji-regex/issues
-
-[climate_maintainability]: https://codeclimate.com/github/pboling/gitmoji-regex/maintainability
-
-[climate_coverage]: https://codeclimate.com/github/pboling/gitmoji-regex/test_coverage
-
-[codecov_coverage]: https://codecov.io/gh/pboling/gitmoji-regex
-
-[code_triage]: https://www.codetriage.com/pboling/gitmoji-regex
-
+[angelme]: https://angel.co/peter-boling
 [blogpage]: http://www.railsbling.com/tags/gitmoji-regex/
-
-[rubygems]: https://rubygems.org/gems/gitmoji-regex
-
+[codecov_coverage]: https://codecov.io/gh/pboling/gitmoji-regex
+[code_triage]: https://www.codetriage.com/pboling/gitmoji-regex
 [chat]: https://gitter.im/pboling/gitmoji-regex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-
-[maintenancee_policy]: https://guides.rubyonrails.org/maintenance_policy.html#security-issues
-
-[liberapay_donate]: https://liberapay.com/pboling/donate
-
+[climate_coverage]: https://codeclimate.com/github/pboling/gitmoji-regex/test_coverage
+[climate_maintainability]: https://codeclimate.com/github/pboling/gitmoji-regex/maintainability
+[copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
+[conduct]: https://gitlab.com/pboling/gitmoji-regex/-/blob/main/CODE_OF_CONDUCT.md
+[contributing]: https://gitlab.com/pboling/gitmoji-regex/-/blob/main/CONTRIBUTING.md
+[devto]: https://dev.to/galtzo
+[documentation]: https://rubydoc.info/github/pboling/gitmoji-regex/main
+[followme]: https://img.shields.io/twitter/follow/galtzo.svg?style=social&label=Follow
+[gh_discussions]: https://github.com/pboling/gitmoji-regex/discussions
 [gh_sponsors]: https://github.com/sponsors/pboling
+[issues]: https://github.com/pboling/gitmoji-regex/issues
+[liberapay_donate]: https://liberapay.com/pboling/donate
+[license]: LICENSE.txt
+[license-ref]: https://opensource.org/licenses/MIT
+[license-img]: https://img.shields.io/badge/License-MIT-green.svg
+[peterboling]: http://www.peterboling.com
+[pvc]: http://guides.rubygems.org/patterns/#pessimistic-version-constraint
+[railsbling]: http://www.railsbling.com
+[rubygems]: https://rubygems.org/gems/gitmoji-regex
+[security]: https://github.com/pboling/gitmoji-regex/blob/main/SECURITY.md
+[semver]: http://semver.org/
+[source]: https://github.com/pboling/gitmoji-regex/
+[tweetme]: http://twitter.com/galtzo
