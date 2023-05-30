@@ -16,7 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New gitmoji "🦺"
 - Releases are now signed
 - Releases now include SHA256 and SHA512 checksums
+### Fixed
 - 100% branch & line test coverage
+### Changed
+- Primary source forge moved from GitHub to [Source Hut](https://git.sr.ht/~galtzo/gitmoji-regex)
 
 ## [1.0.1] - 2022-06-24
 ### Added
