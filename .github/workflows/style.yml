@@ -21,10 +21,8 @@ jobs:
       fail-fast: false
       matrix:
         experimental: [false]
-        rubygems:
-          - latest
-        bundler:
-          - latest
+        gemfile:
+          - style
         ruby:
           - "2.7"
     runs-on: ubuntu-latest

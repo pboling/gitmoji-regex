@@ -8,27 +8,48 @@ begin
 rescue LoadError
   desc "spec task stub"
   task :spec do
-    warn "rspec is disabled"
+    warn "NOTE: rspec isn't installed, or is disabled for #{RUBY_VERSION} in the current environment"
   end
 end
 desc "alias test task to spec"
 task test: :spec
 
 begin
-  require "rubocop/rake_task"
-  RuboCop::RakeTask.new do |task|
-    task.options = ["-D"] # Display the name of the failing cops
+  require "yard"
+
+  YARD::Rake::YardocTask.new do |t|
+    t.files = [
+      # Splats (alphabetical)
+      "lib/**/*.rb",
+      "sig/**/*.rbs",
+      # Files (alphabetical)
+      "CHANGELOG.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "LICENSE.txt",
+      "README.md",
+      "SECURITY.md",
+      "src/gitmojis.json"
+    ]
+    t.options = ["-m", "markdown"] # optional
   end
 rescue LoadError
-  desc "rubocop task stub"
-  task :rubocop do
-    warn "RuboCop is disabled"
+  task :yard do
+    warn "NOTE: yard isn't installed, or is disabled for #{RUBY_VERSION} in the current environment"
   end
 end
 
 desc "Regenerate the Gitmoji reference source files"
 task :regenerate do
-  exec "bin/refresh"
+  load "bin/refresh"
 end
 
-task default: %i[test rubocop]
+defaults = %i[regenerate test]
+
+require "rubocop/ruby2_4"
+
+Rubocop::Ruby24.install_tasks
+
+defaults << :rubocop_gradual
+
+task default: defaults

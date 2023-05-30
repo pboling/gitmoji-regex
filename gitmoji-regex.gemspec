@@ -1,31 +1,46 @@
 # frozen_string_literal: true
 
-require_relative "lib/gitmoji/regex/version"
+# Get the GEMFILE_VERSION without *require* "my_gem/version", for code coverage accuracy
+# See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-825171399
+load "lib/gitmoji/regex/version.rb"
+gem_version = Gitmoji::Regex::Version::VERSION
+Gitmoji::Regex::Version.send(:remove_const, :VERSION)
 
 Gem::Specification.new do |spec|
   spec.name = "gitmoji-regex"
-  spec.version = Gitmoji::Regex::Version::VERSION
+  spec.version = gem_version
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
   spec.summary = "A regular expression for Gitmoji symbols"
   spec.description = "A regular expression matching Gitmoji (a subset of Unicode Emoji) symbols"
-  spec.homepage = "https://github.com/pboling/gitmoji-regex"
+  spec.homepage = "https://git.sr.ht/~galtzo/gitmoji-regex"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/pboling/gitmoji-regex/tree/v#{spec.version}"
-  spec.metadata["changelog_uri"] = "https://github.com/pboling/gitmoji-regex/blob/v#{spec.version}/CHANGELOG.md"
-  spec.metadata["bug_tracker_uri"] = "https://github.com/pboling/gitmoji-regex/issues"
-  spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/gitmoji-regex/#{spec.version}"
-  spec.metadata["wiki_uri"] = "https://github.com/pboling/gitmoji-regex/wiki"
+  spec.metadata["source_code_uri"] = "https://git.sr.ht/~galtzo/#{spec.name}"
+  spec.metadata["changelog_uri"] = "https://git.sr.ht/~galtzo/#{spec.name}"
+  spec.metadata["bug_tracker_uri"] = "https://todo.sr.ht/~galtzo/#{spec.name}"
+  spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/#{spec.name}/#{spec.version}"
+  spec.metadata["wiki_uri"] = "https://man.sr.ht/~galtzo/#{spec.name}/"
+  spec.metadata["funding_uri"] = "https://liberapay.com/pboling"
+  spec.metadata["mailing_list_uri"] = "https://lists.sr.ht/~galtzo/#{spec.name}-devel"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.
-  spec.files = Dir["lib/**/*.rb", "CHANGELOG.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "LICENSE.txt", "README.md",
-                   "SECURITY.md"]
-  spec.test_files = Dir["spec/**/*"]
+  spec.files = Dir[
+    # Splats (alphabetical)
+    "lib/**/*.rb",
+    "sig/**/*.rbs",
+    # Files (alphabetical)
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE.txt",
+    "README.md",
+    "SECURITY.md",
+    "src/gitmojis.json"
+  ]
   spec.bindir = "exe"
   spec.executables = []
   spec.require_paths = ["lib"]
@@ -38,9 +53,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rspec-benchmark", "~> 0.6"
   spec.add_development_dependency "rspec-block_is_expected", "~> 1.0"
-  # Linting - rubocop-lts v8 is a rubocop wrapper for Ruby >= 2.2,
-  #   and should only be bumped when dropping old Ruby support
-  # see: https://dev.to/pboling/rubocop-lts-1e31
-  spec.add_development_dependency "rubocop-lts", ["~> 12.0", ">= 12.0.1"]
+  spec.add_development_dependency "rubocop-lts", "~> 12.1"
+  spec.add_development_dependency "rubocop-packaging", "~> 0.5"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.22"
   spec.add_development_dependency "yard", ">= 0.9.20"
 end

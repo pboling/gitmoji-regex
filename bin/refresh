@@ -8,12 +8,14 @@ require "gitmoji/regex/reference"
 
 GITMOJI_REF = Gitmoji::Regex::Reference.instance
 
-raise "Gitmoji::Regex::Reference JSON is already up-to-date!" if GITMOJI_REF.compare_json && GITMOJI_REF.compare_src
+if GITMOJI_REF.compare_json && GITMOJI_REF.compare_src
+  puts "Gitmoji::Regex::Reference JSON is already up-to-date!"
+else
+  puts "Gitmoji::Regex::Reference JSON is out of date; updating"
 
-puts "Gitmoji::Regex::Reference JSON is out of date; updating"
+  GITMOJI_REF.write_json
 
-GITMOJI_REF.write_json
+  puts "Updating Gitmoji::Regex::REGEX"
 
-puts "Updating Gitmoji::Regex::REGEX"
-
-GITMOJI_REF.write_src
+  GITMOJI_REF.write_src
+end
