@@ -12,6 +12,10 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
+  # See CONTRIBUTING.md
+  spec.cert_chain = ["certs/pboling.pem"]
+  spec.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $PROGRAM_NAME.end_with?("gem")
+
   spec.summary = "A regular expression for Gitmoji symbols"
   spec.description = "A regular expression matching Gitmoji (a subset of Unicode Emoji) symbols"
   spec.homepage = "https://git.sr.ht/~galtzo/gitmoji-regex"

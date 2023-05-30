@@ -10,10 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
-## [1.0.2] - 2023-05-29
+## [1.0.2] - 2023-05-30
 ### Added
 - New gitmoji "🧵"
 - New gitmoji "🦺"
+- Releases are now signed
+- Releases now include SHA256 and SHA512 checksums
+- 100% branch & line test coverage
 
 ## [1.0.1] - 2022-06-24
 ### Added
