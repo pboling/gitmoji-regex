@@ -59,6 +59,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-block_is_expected", "~> 1.0"
   spec.add_development_dependency "rubocop-lts", "~> 12.1"
   spec.add_development_dependency "rubocop-packaging", "~> 0.5"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.22"
   spec.add_development_dependency "yard", ">= 0.9.20"
 end

@@ -46,9 +46,9 @@ end
 
 defaults = %i[regenerate test]
 
-require "rubocop/ruby2_4"
+require "rubocop/lts"
 
-Rubocop::Ruby24.install_tasks
+Rubocop::Lts.install_tasks
 
 defaults << :rubocop_gradual
 
