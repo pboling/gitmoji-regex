@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 DEBUG = ENV.fetch("DEBUG", nil) == "true"
+DEBUG_IDE = ENV.fetch("DEBUG_IDE", "false") == "true"
 
 # external gems
 require "version_gem/ruby"
@@ -19,13 +20,24 @@ actual_minor = VersionGem::Ruby.actual_minor_version?(major, minor, engine)
 
 debugging = gte_min && DEBUG
 RUN_COVERAGE = gte_min && (ENV.fetch("COVER_ALL", nil) || ENV.fetch("CI_CODECOV", nil) || ENV["CI"].nil?)
-ALL_FORMATTERS = actual_minor && (ENV.fetch("COVER_ALL", nil) || ENV.fetch("CI_CODECOV", nil) || ENV.fetch("CI", nil))
+ALL_FORMATTERS = (gte_min && ENV.fetch("COVER_ALL", nil)) ||
+  (actual_minor && (ENV.fetch("CI_CODECOV", nil) || ENV.fetch("CI", nil)))
 
 if DEBUG
   if debugging
-    require "byebug"
+    if DEBUG_IDE
+      # See: https://github.com/ruby-debug/ruby-debug-ide#start-debugging-session
+      # TODO: Figure out how to make this work? Or perhaps the pry integration is sufficient?
+    else
+      require "pry-suite"
+    end
   elsif VersionGem::Ruby.gte_minimum_version?(version, "jruby")
-    require "pry-debugger-jruby"
+    if DEBUG_IDE
+      # See: https://github.com/ruby-debug/ruby-debug-ide#start-debugging-session
+      # TODO: Figure out how to make this work? Or perhaps the pry integration is sufficient?
+    else
+      require "pry-debugger-jruby"
+    end
   end
 end
 

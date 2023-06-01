@@ -15,21 +15,28 @@ if RUN_COVERAGE
   SimpleCov.start do
     enable_coverage :branch
     primary_coverage :branch
-    add_filter "src/regex.rb"
     track_files "**/*.rb"
 
     # Filters (skip these paths for coverage tracking)
     add_filter [
-      %r{^/test/},
-      %r{^/spec/},
-      %r{^/features/},
+      %r{^/bin/},
+      %r{^/certs/},
+      %r{^/checksums/},
       %r{^/config/},
-      %r{^/vendor/},
-      "railtie.rb"
+      %r{^/docs/},
+      %r{^/features/},
+      %r{^/gemfiles/},
+      %r{^/pkg/},
+      %r{^/results/},
+      %r{^/sig/},
+      %r{^/spec/},
+      %r{^/src/},
+      %r{^/test/},
+      %r{^/vendor/}
     ]
 
     # Setup Coverage Dir
-    SimpleCov.coverage_dir "results/coverage"
+    SimpleCov.coverage_dir "coverage"
 
     if ALL_FORMATTERS
       require "simplecov-rcov"

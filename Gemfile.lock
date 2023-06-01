@@ -33,6 +33,12 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    gist (6.0.0)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
+    highline (2.1.0)
     http (5.1.1)
       addressable (~> 2.8)
       http-cookie (~> 1.0)
@@ -41,6 +47,7 @@ GEM
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
+    interception (0.5)
     json (2.6.3)
     json (2.6.3-java)
     language_server-protocol (3.17.0.3)
@@ -49,17 +56,67 @@ GEM
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
     method_source (1.0.0)
+    mime-types (1.25.1)
+    nokogiri (1.15.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.2-java)
+      racc (~> 1.4)
+    nokogiri (1.15.2-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.23.0)
     parser (3.2.2.1)
       ast (~> 2.4.1)
+    posix-spawn (0.3.15)
+    pry (0.14.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     pry (0.14.2-java)
       coderay (~> 1.1)
       method_source (~> 1.0)
       spoon (~> 0.0)
+    pry-byebug (3.10.1)
+      byebug (~> 11.0)
+      pry (>= 0.13, < 0.15)
     pry-debugger-jruby (2.1.1-java)
       pry (>= 0.13, < 0.15)
       ruby-debug-base (>= 0.10.4, < 0.12)
+    pry-doc (1.4.0)
+      pry (~> 0.11)
+      yard (~> 0.9.11)
+    pry-docmore (0.1.1)
+      pry
+      pry-doc
+    pry-git (0.2.3)
+      diffy
+      grit
+      pry (>= 0.9.8)
+    pry-highlight (0.1.0)
+      coderay
+      json
+      nokogiri
+      pry
+    pry-macro (1.0.1)
+      highline
+      pry
+    pry-pretty-numeric (0.1.1)
+      pry
+    pry-rescue (1.5.2)
+      interception (>= 0.5)
+      pry (>= 0.12.0)
+    pry-suite (1.2.0)
+      gist
+      pry
+      pry-byebug
+      pry-doc
+      pry-docmore
+      pry-git
+      pry-highlight
+      pry-macro
+      pry-pretty-numeric
+      pry-rescue
     public_suffix (5.0.1)
+    racc (1.6.2)
+    racc (1.6.2-java)
     rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.8.0)
@@ -181,16 +238,17 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  byebug
   gitmoji-regex!
   http (>= 4.4.1, < 6)
   json (~> 2.0, >= 2.0.2)
-  pry-debugger-jruby
+  pry (~> 0.14)
+  pry-debugger-jruby (~> 2.1)
+  pry-suite (~> 1.2)
   rake (~> 13.0)
-  rspec (~> 3.8)
+  rspec (~> 3.12)
   rspec-benchmark (~> 0.6)
   rspec-block_is_expected (~> 1.0)
-  rubocop-lts (~> 12.1)
+  rubocop-lts (~> 12.1, >= 12.1.1)
   rubocop-packaging (~> 0.5)
   rubocop-rspec (~> 2.22)
   simplecov (~> 0.22)

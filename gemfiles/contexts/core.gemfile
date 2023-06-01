@@ -2,3 +2,6 @@
 
 # Dev
 gem "rake", "~> 13.0"
+
+# Binding.pry - Irb replacement
+gem "pry", "~> 0.14"

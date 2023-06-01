@@ -53,11 +53,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "http", ">= 4.4.1", "< 6"
   spec.add_development_dependency "json", ">= 2.0.2", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rspec-benchmark", "~> 0.6"
   spec.add_development_dependency "rspec-block_is_expected", "~> 1.0"
-  spec.add_development_dependency "rubocop-lts", "~> 12.1"
   spec.add_development_dependency "rubocop-packaging", "~> 0.5"
-  spec.add_development_dependency "yard", ">= 0.9.34"
 end
