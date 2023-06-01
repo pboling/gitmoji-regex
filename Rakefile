@@ -20,18 +20,8 @@ begin
   YARD::Rake::YardocTask.new do |t|
     t.files = [
       # Splats (alphabetical)
-      "lib/**/*.rb",
-      "sig/**/*.rbs",
-      # Files (alphabetical)
-      "CHANGELOG.md",
-      "CODE_OF_CONDUCT.md",
-      "CONTRIBUTING.md",
-      "LICENSE.txt",
-      "README.md",
-      "SECURITY.md",
-      "src/gitmojis.json"
+      "lib/**/*.rb"
     ]
-    t.options = ["-m", "markdown"] # optional
   end
 rescue LoadError
   task :yard do

@@ -18,6 +18,7 @@ GEM
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
+    backports (3.24.1)
     benchmark-malloc (0.2.0)
     benchmark-perf (0.6.0)
     benchmark-trend (0.4.0)
@@ -119,6 +120,7 @@ GEM
     racc (1.6.2-java)
     rainbow (3.1.1)
     rake (13.0.6)
+    redcarpet (3.6.0)
     regexp_parser (2.8.0)
     rexml (3.2.5)
     rspec (3.12.0)
@@ -231,6 +233,10 @@ GEM
     unicode-display_width (2.4.2)
     version_gem (1.1.2)
     yard (0.9.34)
+    yard-junk (0.0.9)
+      backports (>= 3.18)
+      rainbow
+      yard
 
 PLATFORMS
   arm64-darwin-22
@@ -245,6 +251,7 @@ DEPENDENCIES
   pry-debugger-jruby (~> 2.1)
   pry-suite (~> 1.2)
   rake (~> 13.0)
+  redcarpet (~> 3.6)
   rspec (~> 3.12)
   rspec-benchmark (~> 0.6)
   rspec-block_is_expected (~> 1.0)
@@ -257,6 +264,7 @@ DEPENDENCIES
   simplecov-lcov (~> 0.8)
   simplecov-rcov!
   yard (~> 0.9, >= 0.9.34)
+  yard-junk (~> 0.0)
 
 BUNDLED WITH
    2.4.13
