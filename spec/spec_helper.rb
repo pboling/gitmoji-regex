@@ -7,10 +7,6 @@ DEBUG_IDE = ENV.fetch("DEBUG_IDE", "false") == "true"
 require "version_gem/ruby"
 require "version_gem/rspec"
 
-# RSpec Configs
-require "config/rspec/rspec_core"
-require "config/rspec/rspec_block_is_expected"
-
 engine = "ruby"
 major = 2
 minor = 7
@@ -18,28 +14,16 @@ version = "#{major}.#{minor}"
 gte_min = VersionGem::Ruby.gte_minimum_version?(version, engine)
 actual_minor = VersionGem::Ruby.actual_minor_version?(major, minor, engine)
 
-debugging = gte_min && DEBUG
+DEBUGGING = gte_min && DEBUG
+DEBUG_JRUBY = VersionGem::Ruby.gte_minimum_version?(version, "jruby")
 RUN_COVERAGE = gte_min && (ENV.fetch("COVER_ALL", nil) || ENV.fetch("CI_CODECOV", nil) || ENV["CI"].nil?)
 ALL_FORMATTERS = (gte_min && ENV.fetch("COVER_ALL", nil)) ||
   (actual_minor && (ENV.fetch("CI_CODECOV", nil) || ENV.fetch("CI", nil)))
 
-if DEBUG
-  if debugging
-    if DEBUG_IDE
-      # See: https://github.com/ruby-debug/ruby-debug-ide#start-debugging-session
-      # TODO: Figure out how to make this work? Or perhaps the pry integration is sufficient?
-    else
-      require "pry-suite"
-    end
-  elsif VersionGem::Ruby.gte_minimum_version?(version, "jruby")
-    if DEBUG_IDE
-      # See: https://github.com/ruby-debug/ruby-debug-ide#start-debugging-session
-      # TODO: Figure out how to make this work? Or perhaps the pry integration is sufficient?
-    else
-      require "pry-debugger-jruby"
-    end
-  end
-end
+# RSpec Configs
+require "config/rspec/rspec_core"
+require "config/rspec/rspec_block_is_expected"
+require "config/debug"
 
 # Load Code Coverage as the last thing before this gem
 if RUN_COVERAGE
