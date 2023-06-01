@@ -6,7 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- pry-suite for dev/debug
 ### Changed
+- gem dependencies for local development
 ### Fixed
 ### Removed
 
